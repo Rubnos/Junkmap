@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <title>JunkMap</title>
+  <meta charset="utf-8">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Import JQuery-->
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+  integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+  crossorigin=""></script>
+
+  <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+  <header>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper grey darken-2">
+          <a href="index.html" class="brand-logo">JunkMap</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Mapa</a></li>
+            <li><a href="descarte.html">Dicas de descarte</a></li>
+            <li><a href="estatisticas.html">Estátisticas</a></li>
+            <li><a href="fale.html">Fale conosco</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+     <li><a href="index.html">Mapa</a></li>
+     <li><a href="descarte.html">Dicas de descarte</a></li>
+     <li><a href="estatisticas.html">Estátisticas</a></li>
+     <li><a href="fale.html">Fale conosco</a></li>
+     <li><a href="sobre.html">Sobre nós</a></li>
+   </ul>
+ </header>
+ <div id='map'></div>
+ <script src="js/map.js"></script>
+ <div class="hide">
+   <input type="text" id="coordlat" />
+   <input type="text" id="coordlng" />
+ </div>
+ <script type="text/javascript" src="js/materialize.min.js"></script>
+ <script type="text/javascript" src="js/initialize.js"></script>
+</body>
+</html>
